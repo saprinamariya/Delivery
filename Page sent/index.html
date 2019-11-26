@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Курьерская доставка</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="container">
+    <h1 class="caption">курьерская доставкa</h1>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(23,162,184,0.26);">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Заявка <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Список заявок</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Найти</button>
+            </form>
+        </div>
+    </nav>
+</header>
+<div class="container body">
+    <h2 class="title">Оформить заявку</h2>
+    <form action="#">
+        <div class="form-row">
+            <div class="col">
+                <label for="inputAddress">Откуда</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Адрес">
+            </div>
+            <div class="col">
+                <label for="inputName">Контактное лицо</label>
+                <input type="text" class="form-control" id="inputName" placeholder="ФИО">
+            </div>
+            <div class="col">
+                <label for="inputTel">Номер телефона</label>
+                <input type="text" class="form-control" id="inputTel" placeholder="Телефон">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Наш офис
+                </label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="inputAddress">Куда</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Адрес">
+            </div>
+            <div class="col">
+                <label for="inputName">Контактное лицо</label>
+                <input type="text" class="form-control" id="inputName" placeholder="ФИО">
+            </div>
+            <div class="col">
+                <label for="inputTel">Номер телефона</label>
+                <input type="text" class="form-control" id="inputTel" placeholder="Телефон">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check mb-2 mr-sm-2">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Наш офис
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group form-priority">
+            <label for="priority">Приоритет заявки</label>
+            <select class="form-control" id="priority">
+                <option>Обычный (1 день)</option>
+                <option>Срочный (12 часов)</option>
+                <option>Очень срочный (3 часа)</option>
+                <option>Выбрать дату и время</option>
+            </select>
+        </div>
+        <div class="form-check mb-4 mr-sm-2">
+            <input class="form-check-input" type="datetime-local" id="date">
+            <label class="form-check-label" for="date"></label>
+        </div>
+
+        <div class="form-group comment">
+            <label for="comment">Добавить комментарий</label>
+            <textarea class="form-control" id="comment" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-info">Отправить заявку</button>
+    </form>
+</div>
+
+</body>
+</html>
