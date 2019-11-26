@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Курьерская доставка</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="header container">
+    <h1 class="caption">список заявок</h1>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(23,162,184,0.26);">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../form/index.html">Заявка <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Список заявок</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Найти</button>
+            </form>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <table class="table table-hover table-bordered table-active">
+        <thead>
+        <tr class="item">
+            <th scope="col">Заявка №</th>
+            <th scope="col">Инициатор</th>
+            <th scope="col">Статус</th>
+            <th scope="col">Детали заявки</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">000001</th>
+            <td>Иванов Иван Иванович</td>
+            <td>Исполнено</td>
+            <td><a class="details" href="#">Подробнее...</a></td>
+        </tr>
+        <tr>
+            <th scope="row">000002</th>
+            <td>ФИО</td>
+            <td>В исполнении</td>
+            <td><a class="details" href="#">Подробнее...</a></td>
+        </tr>
+        <tr>
+            <th scope="row">000003</th>
+            <td>ФИО</td>
+            <td>Поиск курьера</td>
+            <td><a class="details" href="#">Подробнее...</a></td>
+        </tr>
+        <tr>
+            <th scope="row">000004</th>
+            <td>ФИО</td>
+            <td>Исполнено</td>
+            <td><a class="details" href="#">Подробнее...</a></td>
+        </tr>
+        <tr>
+            <th scope="row">000005</th>
+            <td>ФИО</td>
+            <td>Исполнено</td>
+            <td><a class="details" href="#">Подробнее...</a></td>
+        </tr>
+        <tr>
+            <th scope="row">000006</th>
+            <td>ФИО</td>
+            <td>В исполнении</td>
+            <td><a class="details" href="#">Подробнее...</a></td>
+        </tr>
+        <tr>
+            <th scope="row">000007</th>
+            <td>ФИО</td>
+            <td>Исполнено</td>
+            <td><a class="details" href="#">Подробнее...</a></td>
+        </tr>
+        <tr>
+            <th scope="row">000008</th>
+            <td>ФИО</td>
+            <td>Поиск курьера</td>
+            <td><a class="details" href="#">Подробнее...</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
